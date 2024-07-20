@@ -1,9 +1,4 @@
- <!--start overlay-->
- <div class="overlay toggle-icon"></div>
- <!--end overlay-->
- <!--Start Back To Top Button-->
- <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
- <!--End Back To Top Button-->
- <footer class="page-footer">
-     <p class="mb-0">Copyright © {{ date('Y') }}. All right reserved.</p>
- </footer>
+<footer
+    class="footer d-flex flex-column flex-md-row align-items-center justify-content-between px-4 py-3 border-top small">
+    <p class="text-muted mb-1 mb-md-0">Copyright © {{ date('Y') }}. All right reserved.</p>
+</footer>

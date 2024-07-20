@@ -7,20 +7,6 @@
     var footer = $('footer');
     var sidebar = $('.sidebar');
     var navbar = $('.navbar').not('.top-navbar');
-    
-
-    // For Buy Now button. 
-    $("body").prepend('\
-      <div class="buy-now-wrapper">\
-        <a href="https://www.nobleui.com/laravel/documentation/docs.html" target="_blank" class="btn btn-primary text-white fw-bold btn-icon-text">\
-          <i data-feather="file-text"></i>\
-        </a>\
-        <a href="https://1.envato.market/nobleui_laravel" target="_blank" class="btn btn-danger text-white fw-bold btn-icon-text">\
-        <i class="btn-icon-prepend" data-feather="shopping-cart"></i>\
-        Buy Now\
-      </a>\
-      </div>\
-    ');
 
 
     // Enable feather-icons with SVG markup
@@ -59,7 +45,7 @@
     })
 
 
-    // Applying perfect-scrollbar 
+    // Applying perfect-scrollbar
     if ($('.sidebar .sidebar-body').length) {
       const sidebarBodyScroll = new PerfectScrollbar('.sidebar-body');
     }
@@ -130,7 +116,7 @@
     });
 
 
-    // close sidebar when click outside on mobile/table    
+    // close sidebar when click outside on mobile/table
     $(document).on('click touchstart', function(e){
       e.stopPropagation();
 
@@ -159,7 +145,7 @@
           navItemClicked.removeClass('show-submenu');
         }
         $(this).toggleClass('show-submenu');
-      }        
+      }
     })
 
     $(window).scroll(function() {
@@ -180,7 +166,7 @@
     }, function () {
       $('body').removeClass('overflow-hidden');
     });
-   
+
 
   });
 })(jQuery);

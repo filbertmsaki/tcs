@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MembersController;
 use App\Http\Controllers\UserManagement\PermissionController;
 use App\Http\Controllers\UserManagement\RolesAssignmentController;
 use App\Http\Controllers\UserManagement\RolesController;
@@ -20,6 +21,8 @@ use App\Http\Controllers\WebController;
 |
 */
 
+Route::get('/migrate-and-seed', [WebController::class, 'migrateAndSeed'])->name('migrateAndSeed');
+
 Route::get('/', [WebController::class, 'index'])->name('index');
 Route::get('/about-us', [WebController::class, 'about'])->name('about');
 Route::get('/events', [WebController::class, 'events'])->name('events');
@@ -35,4 +38,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
         Route::resource('roles-assignment', RolesAssignmentController::class);
     });
     Route::resource('users', UsersController::class);
+    Route::resource('members', MembersController::class);
+
 });
