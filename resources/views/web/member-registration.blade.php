@@ -33,10 +33,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="pull-right">
-                <a href="{{ route('members') }}" class="get-qoute"><i class="fa fa-arrow-circle-right"></i>Become a
-                    Member</a>
-            </div>
+           
         </div>
     </div>
     <section class="volunteer">
