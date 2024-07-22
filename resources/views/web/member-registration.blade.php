@@ -33,7 +33,7 @@
                     </li>
                 </ul>
             </div>
-           
+
         </div>
     </div>
     <section class="volunteer">
@@ -57,17 +57,10 @@
                         <li>Fill this form - COMPLETELY</li>
                         <li>Payment option
                             <ul>
+
                                 <li>
-                                    <strong>BANK TRANSFER</strong><br>
-                                    Deposit the fees in a Aphyta Bank Account: <br>
-                                    <strong>Name:</strong> The Association of Physicians of Tanzania<br>
-                                    <strong>Bank:</strong> NMB<br>
-                                    <strong>Account Number:</strong> 20910032155
-                                </li>
-                                <li>
-                                    <strong>LIPA Number (tigo)</strong><br>
-                                    8829908<br>
-                                    See picture below
+                                    <strong>LIPA Number (M-Pesa )</strong>
+                                    542-932-77
                                 </li>
                             </ul>
                         </li>
@@ -133,12 +126,11 @@
                                     <select class="text-capitalize selectpicker form-control required"
                                         name="qualification" data-style="g-select" data-width="100%">
                                         <option value="">Select qualification</option>
-                                        <option value="mmed">M.med.</option>
-                                        <option value="mmed_subspeciality">M.med. affiliated subspeciality</option>
-                                        <option value="both">Both M.med. and Subspeciality</option>
-                                        <option value="md_training">MD in training</option>
-                                        <option value="md_interest">MD with interest and working in internal
-                                            medicine</option>
+                                        <option value="Diplomas">Diplomas</option>
+                                        <option value="Advances  Diploma">Advances Diploma</option>
+                                        <option value="1st Degree">1st Degree</option>
+                                        <option value="2nd Degree">2nd Degree</option>
+                                        <option value="3rd Fellowships">3rd Fellowships</option>
                                     </select>
                                 </div>
                             </div>
@@ -172,9 +164,11 @@
                                     <select class="text-capitalize selectpicker form-control required"
                                         name="qualification" data-style="g-select" data-width="100%">
                                         <option value="">Select membership</option>
-                                        <option value="Member">Member</option>
-                                        <option value="Associate Member">Associate Member</option>
-
+                                        <option value="Ordinary Members">Ordinary Members</option>
+                                        <option value="Associate Members">Associate Members</option>
+                                        <option value="Honorary Members">Honorary Members</option>
+                                        <option value="International Members">International Members</option>
+                                        <option value="Corporate Members">Corporate Members</option>
                                     </select>
                                 </div>
                             </div>
@@ -184,17 +178,22 @@
                             <div>
                                 <h4 class="card-title">Acknowledgment and Certification</h4>
                                 <p class="card-text mt-4">
-                                    I have filled the form correctly and I hereby certify that the information contained in this application is true, complete, and correct to the best of my knowledge and belief.
+                                    I have filled the form correctly and I hereby certify that the information contained
+                                    in this application is true, complete, and correct to the best of my knowledge and
+                                    belief.
                                 </p>
                                 <p class="card-text mt-4">
-                                    I declare to abide by the Constitution of the Association and uphold APHYTA’s code of conduct.
+                                    I declare to abide by the Constitution of the Association and uphold APHYTA’s code
+                                    of conduct.
                                 </p>
                                 <p class="card-text mt-4">
-                                    I consent to the publishing of my name as a member of the Association of Physicians in Tanzania.
+                                    I consent to the publishing of my name as a member of the Association of Physicians
+                                    in Tanzania.
                                 </p>
                                 <div class="checkbox-inline" style="padding-left: 0px;">
                                     <label class="checkbox-inline">
-                                        <input type="checkbox" id="agreeCheck" required> I agree to all the above statements
+                                        <input type="checkbox" id="agreeCheck" required> I agree to all the above
+                                        statements
                                     </label>
                                 </div>
                             </div>

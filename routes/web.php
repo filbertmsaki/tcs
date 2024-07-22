@@ -32,6 +32,7 @@ Route::get('/membership', [WebController::class, 'members'])->name('members');
 Route::get('/membership-registration', [WebController::class, 'member_registration'])->name('member_registration');
 Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/profile', [DashboardController::class, 'profile'])->name('profile');
     Route::group(['as' => 'users.'], function () {
         Route::resource('roles', RolesController::class);
         Route::resource('permissions', PermissionController::class);
@@ -39,5 +40,4 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     });
     Route::resource('users', UsersController::class);
     Route::resource('members', MembersController::class);
-
 });
