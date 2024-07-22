@@ -128,6 +128,12 @@ input,textarea {font-family: 'Roboto', sans-serif;display: block; font-size: 16p
 .paddt-50 {
   padding-top: 50px;
 }
+.paddt-30 {
+  padding-top: 30px;
+}
+.paddt-20 {
+  padding-top: 20px;
+}
 
  .overlay3 {
   position: absolute;
@@ -282,6 +288,22 @@ input,textarea {font-family: 'Roboto', sans-serif;display: block; font-size: 16p
   padding-bottom: 20px;
 }
 .section-title2 h3:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 60px;
+    left: 0;
+    background: #ff5722;
+    bottom: 0px;
+}
+.section-title-member h3 {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+.section-title-member h3:before {
     position: absolute;
     content: "";
     height: 2px;

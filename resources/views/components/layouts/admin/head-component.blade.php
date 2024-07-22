@@ -9,7 +9,7 @@
     <title>Tanzania Cardiac Society</title>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="{{ asset('images/favicons/favicon-32x32.png') }}">
     <!-- plugin css -->
     <link href="{{ asset('assets/fonts/feather-font/css/iconfont.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/plugins/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" />

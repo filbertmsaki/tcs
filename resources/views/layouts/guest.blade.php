@@ -11,7 +11,7 @@
     <title>Tanzania Cardiac Society</title>
     <!-- End fonts -->
     <!-- CSRF Token -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="{{ asset('images/favicons/favicon-32x32.png') }}">
     <link href="assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" />
     <link href="assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" />
 

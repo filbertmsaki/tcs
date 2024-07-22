@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Member;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -11,7 +12,15 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('admin.dashboard');
+        // Count all members
+        $totalMembers = Member::count();
+
+        // Count paid members
+        $paidMembers = Member::where('payment', 'Paid')->count();
+
+        // Count not paid members
+        $notPaidMembers = Member::where('payment', 'Not Paid')->count();
+        return view('admin.dashboard',compact('totalMembers','paidMembers','notPaidMembers'));
 
     }
     public function profile()

@@ -30,6 +30,9 @@ Route::get('/gallery', [WebController::class, 'gallery'])->name('gallery');
 Route::get('/contact-us', [WebController::class, 'contact'])->name('contact');
 Route::get('/membership', [WebController::class, 'members'])->name('members');
 Route::get('/membership-registration', [WebController::class, 'member_registration'])->name('member_registration');
+Route::post('/membership-registration', [WebController::class, 'member_registration_store'])->name('member_registration_store');
+Route::get('/membership/{id}', [WebController::class, 'member_registration_show'])->name('member_registration_show')->middleware('signed');
+
 Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/profile', [DashboardController::class, 'profile'])->name('profile');
