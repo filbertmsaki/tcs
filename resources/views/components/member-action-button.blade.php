@@ -14,11 +14,5 @@
         <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="trash"
                 class="icon-sm me-2"></i>
             <span class="">Delete</span></a>
-        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="printer"
-                class="icon-sm me-2"></i>
-            <span class="">Print</span></a>
-        <a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="download"
-                class="icon-sm me-2"></i>
-            <span class="">Download</span></a>
     </div>
 </div>
